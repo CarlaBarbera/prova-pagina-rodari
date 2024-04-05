@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    font-family:'Rowan', serif;
+}
+
+img {
+    max-width: 100%;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin:0;
+    padding:0;
+}
+
+header, h1, h2, footer {
+    font-family: 'Switzer', sans-serif;
+}
+header {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+header p {
+    font-weight: bold;
+}
+
+header nav ul a, footer nav ul a {
+        text-decoration: none;
+        color: #999;
+}
+
+header nav ul a:hover, footer nav ul a:hover {
+        text-decoration: underline;
+        color: #000;
+}
+
+.info {
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+    padding: 120px 20px;
+    grid-template-columns: 3fr 1fr;
+    gap: 128px;
+}
+
+.info h1 {
+    font-size: 90px;
+    line-height: 1.1;
+}
+
+.colore-1 {
+    background-color: #a8b0af;
+    padding: 120px 20px;
+}
+
+.colore-2 {
+    padding: 120px 20px;
+}
+
+.cointainer {
+   max-width: 1120px;
+   margin: auto;
+   display: flex;
+   gap: 120px;
+}
+
+.cointainer .text {
+    width: 66%;
+}
+
+.conteiner .image {
+    width: 33%;
+}
+
+.cointainer .text h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+.cointainer .text p {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24 20px;
+    font-size: 14px;
+}
+
+@media (max-width:600px) {
+    .info {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .info h1 {
+        font-size: 42px;
+    }
+
+    .cointainer .text {
+        width: 100%;
+    }
+    
+    .conteiner .image {
+        width: 100%;
+    }
+
+    .cointainer {
+        flex-direction: column;
+        gap: 36px;
+     }
+
+} 
